@@ -1,8 +1,8 @@
 body {
   align-items: center;
-  background-color: #f8f7f3;
+  background-color: #FFFDEE;
   border: 30px solid #fff;
-  color: #555555;
+  color: #3F2525;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -22,24 +22,28 @@ a {
   background-image: linear-gradient(to bottom, #69FCBE 60%, #69FCBE 100%);
   background-position: 0 15px;
   background-repeat: no-repeat;
-  color: #555555;
+  color: #3F2525;
   display: inline-block;
   position: relative;
   text-decoration: none;
   transition: all 300ms;
+  font-size: 16px;
 }
 
 a:visited {
   background-image: linear-gradient(to bottom, #FF87C0 60%, #FF87C0 100%);
   font-weight: bold;
+  font-size: 16px;
 }
 
 a:hover {
   background-position: 0 0;
+  font-size: 16px;
 }
 
 a:active {
   background-image: linear-gradient(to bottom, #FF87C0 60%, #FF87C0 100%);
+  font-size: 16px;
 }
 
 .header {
@@ -55,6 +59,7 @@ a:active {
   font-size: 20px;
   letter-spacing: 4px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .writer-img {
@@ -80,8 +85,44 @@ a:active {
 .contact-links a {
   background: none;
   margin-left: 20px;
+  size: 16px;
 }
 
 .contact-links img {
   height: 22px;
 }
+
+@media only screen and (max-width: 1175px) {
+  .writer-img {
+    position: relative;
+    right: auto;
+    width: 140px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  body {
+    border-width: 30px 0px;
+    text-align: left;
+  }
+
+  .intro {
+  text-align: center;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .contact-links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .logo {
+    font-size: 17px;
+  }
+}
+
+
+
