@@ -18,6 +18,7 @@ body {
 
 h1 {
   font-size: 30px;
+  font-weight: normal;
 }
 
 ul {
@@ -39,17 +40,14 @@ a {
 a:visited {
   background-image: linear-gradient(to bottom, #FF87C0 60%, #FF87C0 100%);
   font-weight: bold;
-  font-size: 16px;
 }
 
 a:hover {
   background-position: 0 0;
-  font-size: 16px;
 }
 
 a:active {
   background-image: linear-gradient(to bottom, #FF87C0 60%, #FF87C0 100%);
-  font-size: 16px;
 }
 
 .header {
@@ -57,7 +55,6 @@ a:active {
   display: flex;
   justify-content: space-between;
   margin: -55px auto 60px;
-  max-width: 1200px;
 }
 
 .logo {
@@ -66,12 +63,32 @@ a:active {
   letter-spacing: 4px;
   text-transform: uppercase;
   white-space: nowrap;
+  list-style-type: none;
+  background-image: none;
+}
+
+a.logo {
+  font-size: 20px;
 }
 
 .writer-img {
   margin-right: 40px;
   position: absolute;
   right: 100%;
+}
+
+.navigation {
+  font-size: 8px;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navigation a {
+  background: none;
 }
 
 .container {
@@ -98,6 +115,10 @@ a:active {
   height: 22px;
 }
 
+.intro {
+  text-align: center;
+}
+
 @media only screen and (max-width: 1175px) {
   .writer-img {
     margin: 0 auto;
@@ -105,11 +126,7 @@ a:active {
     right: auto;
     width: 140px;
   }
-
-  .intro {
-    text-align: center;
-  }
-}
+}  
 
 @media screen and (max-width: 605px) {
   body {
