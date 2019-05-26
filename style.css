@@ -115,16 +115,16 @@ a.logo {
   height: 22px;
 }
 
-.intro {
-  text-align: center;
-}
-
 @media only screen and (max-width: 1175px) {
   .writer-img {
     margin: 0 auto;
     position: relative;
     right: auto;
     width: 140px;
+  }
+
+  .intro {
+    text-align: center;
   }
 }  
 
